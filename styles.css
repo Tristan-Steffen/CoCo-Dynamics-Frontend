@@ -1,0 +1,499 @@
+* {
+    font-family: sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    grid-area: header;
+    padding: 25px;
+    height: 100px;
+    max-width: 100vw;
+    background: white;
+    box-sizing: border-box;
+}
+
+header .logo, header .menu {
+    width: 50%;
+}
+
+header .logo {
+    max-height: 100%;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .logo img:first-child {
+    margin-right: 25px;
+}
+
+header .menu {
+    text-align: right;
+}
+
+header .menu li {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: blue;
+}
+
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    grid-row-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 310px;
+    grid-template-areas: "video chat" "control chat";
+    background: linear-gradient(to right, #FAC3C2 0%, #E3A6C1 100%);
+}
+
+
+.video {
+    grid-area: video;
+    background: ghostwhite;
+    overflow: hidden;
+
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+}
+
+.control {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 300px;
+    grid-area: control;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". up ." "left center right" ". down .";
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.control-div i {
+    color: blue;
+    font-size: 50px;
+}
+
+.control-div {
+    width: 100%;
+    height: 100%;
+}
+
+.control-div button {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.left-button, .right-button {
+    flex-direction: row;
+}
+
+.up-button, .down-button {
+    flex-direction: column;
+}
+
+.voting-count {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+#countdown {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#up-div {
+    grid-area: up;
+    background: linear-gradient(to bottom, rgba(183, 82, 250, 0.5) 0%, rgba(250, 79, 61, 0.5) 100%);
+
+}
+
+#down-div {
+    grid-area: down;
+    background: linear-gradient(to top, rgba(183, 82, 250, 0.5) 0%, rgba(250, 79, 61, 0.5) 100%);
+}
+
+#left-div {
+    grid-area: left;
+    background: linear-gradient(to right, rgba(183, 82, 250, 0.5) 0%, rgba(250, 79, 61, 0.5) 100%);
+}
+
+#right-div {
+    grid-area: right;
+    background: linear-gradient(to left, rgba(183, 82, 250, 0.5) 0%, rgba(250, 79, 61, 0.5) 100%);
+
+}
+
+#center-div {
+    background: rgba(250, 79, 61, 0.5);
+    grid-area: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+#center-div i {
+    font-size: 24px;
+    color: black;
+    margin-right: 5px;
+}
+
+
+.chat {
+    grid-area: chat;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.chat h4 {
+    margin-top: 0;
+}
+
+.chat li {
+    margin-bottom: 5px;
+}
+
+.chat li:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.chat li:nth-child(even) {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#chat-messages {
+    height: 100%;
+    padding: 25px;
+    margin: 0;
+    overflow: scroll;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#send-container {
+    margin-top: 25px;
+}
+
+
+/*############   HOW TO HTML ###########*/
+.howToWrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "videotutorial control-tutorial" "chat-tutorial control-tutorial";
+    background: linear-gradient(to right, #DEDEDE 0%, #b6adb0 100%);
+}
+
+.how-to-video {
+    grid-area: videotutorial;
+    background: #F2F2F2;
+}
+
+.how-to-video p {
+    padding: 15px;
+}
+
+.how-to-video img {
+    width: 50%;
+    padding: 50px 0 0 50px;
+}
+
+.how-to-chat {
+    grid-area: chat-tutorial;
+    background: #E6E6E6;
+    display: flex;
+    flex-direction: row;
+}
+
+.how-to-chat img {
+    width: 30vh;
+    padding: 15px;
+}
+
+.how-to-chat p {
+    align-self: center;
+    padding-right: 10px;
+}
+
+.how-to-control {
+    grid-area: control-tutorial;
+    background: #D9D9D9;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.how-to-control div:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.how-to-control p {
+    padding-right: 10px;
+}
+
+#how-to-control-main, #how-to-control-arrow, #how-to-control-arrow-count, #how-to-control-timer {
+    display: grid;
+    column-gap: 20px;
+    padding: 10px;
+    grid-template-columns: 160px 1fr;
+}
+
+.how-to-control img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 100%;
+}
+
+
+/*############   ABOUT HTML ###########*/
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas: "context" "project" "team";
+}
+
+.about-team {
+    grid-area: team;
+    background: linear-gradient(to bottom, #b6adb0 0%, #b2a272 100%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 120px 1fr;
+    grid-template-areas: "header header header header" "enrico tristan dario fabian";
+    padding-bottom: 100px;
+}
+
+.about-team img {
+    width: 20vw;
+    height: 20vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.about-team h3, .about-context h1 {
+    text-align: center;
+}
+
+#about-ueberschrifft, #about-context-ueberschrift, #about-project-ueberschrift {
+    grid-area: header;
+    text-align: center;
+}
+
+.about-enriko {
+    grid-area: enrico;
+}
+
+.about-tristan {
+    grid-area: tristan;
+}
+
+.about-dario {
+    grid-area: dario;
+}
+
+.about-fabian {
+    grid-area: fabian;
+}
+
+.about-context {
+    grid-area: context;
+    background: linear-gradient(to bottom, #ffffff 0%, #b6adb0 100%);
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 120px 1fr;
+    grid-template-areas: "header header" "bild text";
+}
+
+.about-context img {
+    grid-area: bild;
+    width: 55vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-context-text {
+    padding: 20px;
+}
+
+.about-project {
+    grid-area: project;
+    display: grid;
+    background: #b6adb0;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 120px 1fr;
+    grid-template-areas: "header header" "text bilder";
+}
+
+.about-project-text {
+    grid-area: text;
+}
+
+.about-project-text p ,.about-project-text h3{
+    padding: 0 20px 5px 10px;
+}
+
+.about-project-bilder {
+    grid-area: bilder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-project img {
+    width: 24vw;
+    padding-bottom: 5px;
+}
+
+.about-project-text a{
+    color: black;
+}
+
+
+/*############   MEDIA QUERY ###########*/
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 310px 1fr;
+        grid-template-areas: "video" "control" "chat";
+    }
+
+    header {
+        flex-direction: column;
+        height: 120px;
+    }
+
+    header .logo {
+        display: flex;
+    }
+
+    header .logo img {
+        max-height: 50px;
+        align-self: center;
+    }
+
+    header .menu {
+        padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header .menu li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .video {
+        height: max-content;
+        background: transparent;
+    }
+
+    .chat {
+        max-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .howToWrapper {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "videotutorial" "chat-tutorial" "control-tutorial";
+        background: linear-gradient(to right, #DEDEDE 0%, #b6adb0 100%);
+    }
+
+    .how-to-control img {
+        padding: 20px;
+    }
+
+    .about-team {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 120px auto auto;
+        grid-template-areas: "header header" "enrico tristan" "dario fabian";
+    }
+
+    .about-team img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .about-context {
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr 1fr;
+        grid-template-areas: "header" "bild" "text";
+    }
+
+    .about-context img {
+        width: 90vw;
+    }
+
+    .about-project {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 120px 1fr max-content;
+        grid-template-areas: "header" "text" "bilder";
+    }
+
+    .about-project img {
+        width: 33.3vw;
+        height: 45vw;
+    }
+
+    .about-project-bilder {
+        grid-area: bilder;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+

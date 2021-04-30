@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/a190654a89.js" crossorigin="anonymous"></script>
+    <script src="voting.js"></script>
+    <script type="module" src="JavaScript/Main.mjs"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="video">
+        <img src="pictures/video.jpg" class="video">
+    </div>
+
+    <div class="chat">
+        <h4 style="margin-top: -5px">willkommen im CoCo-Dynamics chat</h4>
+        <b>Guest: </b>
+        <p>hi </p>
+        <br>
+        <b>Guest2: </b>
+        <p>hi ^^</p>
+        <br>
+        <b>Guest3: </b>
+        <p>Die neue Location sieht ja ganz schön edel aus</p>
+        <br>
+        <b>Guest2: </b>
+        <p>lass mal versuchen die Küche zu finden XD</p>
+        <br>
+    </div>
+
+    <div class="backlog">
+        <h4 style="margin-top: -5px">nächster Befehl wird in 2 Sekunden ausgeführt</h4>
+    </div>
+
+    <i id="down-icon" class="fas fa-angle-double-down"></i>
+    <i id="move-icon" class="fas fa-caret-square-right"></i>
+    <i id="up-icon" class="fas fa-angle-double-up"></i>
+    <i id="right-icon" class="fas fa-angle-right"></i>
+    <i id="left-icon" class="fas fa-angle-left"></i>
+
+    <button id="down-button" class="voting-option" name="down"></button>
+    <button id="up-button" class="voting-option" name="up"></button>
+    <button id="move-button" class="voting-option" name="move"><p class="voting-count"></p></button>
+    <button id="right-button" class="voting-option" name="right"></button>
+    <button id="left-button" class="voting-option" name="left"></button>
+
+</div>
+</body>
+</html>

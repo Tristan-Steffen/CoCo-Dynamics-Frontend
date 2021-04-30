@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COCO Dynamics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/a190654a89.js" crossorigin="anonymous"></script>
+    <script src="voting.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="video">
+        <img src="http://34.89.204.31/?action=stream">
+    </div>
+
+    <div style="overflow: scroll" class="chat">
+        <h4 style="margin-top: -5px">willkommen im CoCo-Dynamics chat</h4>
+        <ul id="chat-messages">
+            <b>Guest: </b>
+            <p>hi </p>
+            <br>
+            <b>Guest2: </b>
+            <p>hi ^^</p>
+            <br>
+            <b>Guest3: </b>
+            <p>Die neue Location sieht ja ganz schön edel aus</p>
+            <br>
+            <b>Guest2: </b>
+            <p>lass mal versuchen die Küche zu finden XD</p>
+            <br>
+        </ul>
+        <div style="bottom: 10px" id="sendContainer">
+            <input type="text" id="message-input">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+
+    <div id="up-div"></div>
+
+    <div id="left-div"></div>
+
+    <div id="down-div"></div>
+
+    <div id="right-div"></div>
+
+    <div id="center-div"></div>
+
+    <p class="voting-count" name="right" style="grid-row: 74/85; grid-column: 16; text-align: center; font-size: 4vh"></p>
+    <p class="voting-count" name="left" style="grid-row: 74/85; grid-column: 8; text-align: center; font-size: 4vh"></p>
+    <p class="voting-count" name="move" style="grid-row: 67; grid-column: 10/15; text-align: center; font-size: 4vh"></p>
+    <p class="voting-count" name="backoff" style="grid-row: 81; grid-column: 10/15; text-align: center; font-size: 4vh"></p>
+
+    <img style="grid-column: 25; grid-row: 60; width: 15vw; height: 10vh;" src="pictures/CocoLogo.png">
+    <img style="grid-column: 45; grid-row: 60; width: 15vw; height: 10vh;" src="pictures/ThLogo.png">
+
+    <a href="tutorial.html">klick mich</a>
+
+    <!--
+     <div class="backlog">
+        <h2 style="margin-top: -5px">nächster Befehl wird in <span id="countdown">2</span> Sekunden ausgeführt</h2>
+        <div class="commands"><h4>LEFT Votes</h4><h4 class="voting-count" name="left" style="float: right;"></h4></div>
+        <div class="commands"><h4>RIGHT Votes</h4><h4 class="voting-count" name="right" style="float: right;"></h4>
+        </div>
+        <div class="commands"><h4>MOVE Votes</h4><h4 class="voting-count" name="move" style="float: right;"></h4></div>
+        <div class="commands"><h4>BACKOFF Votes</h4><h4 class="voting-count" name="backoff" style="float: right;"></h4>
+        </div>
+    </div>
+
+        <div class="baseButton" style="bottom: 20px; left: 130px"></div>
+        <div class="baseButton" style="bottom: 130px; left: 10px; transform: rotate(90deg)"></div>
+        <div class="baseButton" style="bottom: 240px; left: 130px; transform: rotate(180deg)"></div>
+        <div class="baseButton" style="bottom: 130px; left: 250px; transform: rotate(270deg)"></div>
+
+        <h2 style="position: absolute; bottom: 80px; left: 170px">3</h2>
+        <h2 style="position: absolute; bottom: 190px; left: 170px">3</h2>
+        <h2 style="position: absolute; bottom: 135px; left: 100px">3</h2>
+        <h2 style="position: absolute; bottom: 135px; left: 240px">3</h2>
+
+        <button id="down-button" class="baseButton" name="backoff" style="bottom: 20px; left: 130px"></button>
+        <button id="left-button" class="baseButton" name="left" style="bottom: 130px; left: 10px; transform: rotate(90deg)"></button>
+        <button id="up-button" class="baseButton" name="move" style="bottom: 240px; left: 130px; transform: rotate(180deg)"></button>
+        <button id="right-button" class="baseButton" name="right" style="bottom: 130px; left: 250px; transform: rotate(270deg)"></button>
+
+
+    <i id="right-icon" class="fas fa-angle-right"></i>
+    -->
+
+    <button class="moveButton voting-option" name="move" style=" grid-row: 60/75; grid-column: 10/15;">
+        <i id="up-icon" class="fas fa-angle-double-up"></i>
+    </button>
+
+    <button class="moveButton voting-option" name="backoff" style="grid-row: 85/100; grid-column: 10/15;">
+        <i id="down-icon" class="fas fa-angle-double-up" style="transform: rotate(180deg)"></i>
+    </button>
+
+    <button class="moveButton voting-option" name="left" style="grid-row: 75/85; grid-column: 2/10;">
+        <i id="left-icon" class="fas fa-angle-double-up" style="transform: rotate(270deg)"></i>
+    </button>
+
+    <button class="moveButton voting-option" name="right" style="grid-row: 75/85; grid-column: 15/23;">
+        <i id="right-icon" class="fas fa-angle-double-up" style="transform: rotate(90deg)"></i>
+    </button>
+
+
+</div>
+</body>
+</html>

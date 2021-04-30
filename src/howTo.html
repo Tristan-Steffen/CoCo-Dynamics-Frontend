@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COCO Dynamics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="voting.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="pictures/CocoLogo.png">
+        <img src="pictures/ThLogo.png">
+    </div>
+
+    <ul class="menu">
+        <li><a href="index.html">control</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="#">how to</a></li>
+    </ul>
+</header>
+
+<div class="howToWrapper">
+
+    <div class="how-to-video">
+        <div class="video">
+            <img id="video-link"  src="https://video.cocodynamics.eu/?action=stream">
+        </div>
+        <p>This is the Live Video feed. Here you can see what the COCO-DYNAMICS-bot sees and explore the
+            surroundings.</p>
+    </div>
+
+    <div class="how-to-chat">
+        <img src="pictures/tutorial-chat.jpg">
+        <p>In the chat you can communicate with everyone else who is using the COCO-DYNAMICS-bot.</p>
+    </div>
+
+    <div class="how-to-control">
+        <div id="how-to-control-main">
+            <img src="pictures/tutorial-controls.jpg">
+            <p>The control pad moves the COCO-DYNAMICS-bot and is therefore our means of interaction with the robot.</p>
+        </div>
+
+        <div id="how-to-control-arrow">
+            <p>There are 4 directions in which you can move. Front, back, left and right, where front and back allow the
+                robot to move forward/backward.
+                Left and right, however, turn the robot on the spot.</p>
+            <img src="pictures/tutorial-controls-arrow.jpg">
+        </div>
+
+        <div id="how-to-control-arrow-count">
+            <p>Next to each arrow is a number. This indicates how many people have voted for the respective direction.
+                Every 5 seconds
+                the command with the most voices is executed. In case of a tie no command is executed.</p>
+            <img src="pictures/tutorial-controls-counter.jpg">
+        </div>
+
+        <div id="how-to-control-timer">
+            <p>The counter in the middle indicates how much time you have until the voting phase is over and the next
+                one begins.</p>
+            <img src="pictures/tutorial-controls-timer.jpg">
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

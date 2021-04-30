@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COCO Dynamics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/a190654a89.js" crossorigin="anonymous"></script>
+    <script src="voting.js"></script>
+</head>
+<body>
+
+
+<header>
+    <div class="logo">
+        <img src="pictures/CocoLogo.png">
+        <img src="pictures/ThLogo.png">
+    </div>
+
+    <ul class="menu">
+        <li><a href="#">control</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="howTo.html">how to</a></li>
+    </ul>
+</header>
+
+<div class="wrapper">
+
+    <div class="video">
+        <img id="video-link" src="https://video.cocodynamics.eu/?action=stream">
+        <!--  <img src="pictures/Video.jpg">-->
+    </div>
+
+
+    <div class="control">
+
+        <div class="control-div" id="up-div">
+            <button class="up-button voting-option" name="move">
+                <i id="up-icon" class="fas fa-angle-double-up"></i>
+                <p class="voting-count" name="move">4</p>
+            </button>
+        </div>
+
+        <div class="control-div" id="left-div">
+            <button class="left-button voting-option" name="left">
+                <i id="left-icon" class="fas fa-angle-double-up" style="transform: rotate(270deg)"></i>
+                <p class="voting-count" name="left">4</p>
+            </button>
+        </div>
+
+        <div class="control-div" id="down-div">
+            <button class="down-button voting-option" name="backoff">
+                <p class="voting-count" name="backoff">3</p>
+                <i id="down-icon" class="fas fa-angle-double-up" style="transform: rotate(180deg)"></i>
+            </button>
+        </div>
+
+        <div class="control-div" id="right-div">
+            <button class="right-button voting-option" name="right">
+                <p class="voting-count" name="right">3</p>
+                <i id="right-icon" class="fas fa-angle-double-up" style="transform: rotate(90deg)"></i>
+            </button>
+        </div>
+
+        <div class="control-div" id="center-div">
+            <i class="fas fa-hourglass-half"></i>
+            <p id="countdown">5</p>
+        </div>
+    </div>
+
+    <div class="chat">
+        <h4>Welcome to the CoCo-Dynamics chat</h4>
+        <ul id="chat-messages">
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+            <li>hi</li>
+        </ul>
+        <div id="send-container">
+            <input type="text" id="message-input">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
